@@ -103,6 +103,7 @@ body {
   --secondary_text: #858E96;
   --boxs: #333;
   background-color: var(--bg);
+  background-size: contain;
 }
 .dark-theme .bg {
   width: 100%;
