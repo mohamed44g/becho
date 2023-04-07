@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="../css/signIn.css">
     <title>Sign In</title>
 </head>
-<body class="dark-theme">
+<body class="light-theme">
     <div class="bg"></div>
 
     <div class="form-container">
         <div class="form-content">
             <div class="form-icon">
-                <img src="https://lh3.googleusercontent.com/UuQHkYQtZKCPyYMI2BSVmz_CvAL0ti29N8ktkmk26elhc1MpsBy9ADgxOT5GEeYa3bJ_Z2oTnJ2VcmU7SC-cunuYroPK0TyuWHakBsYgXZhlVkFmeGAf2ylH_hfKGom32tLCorCe7WilpfFmv8B59HaDMTPw2pxoIWlqweAwLOO01Y9kLbPBTAAezBIuYUVRJ1sVM2HBLuYnhYd5ytKALFiVvjj-fKumMzGHVznUDkObNvBFbFR6TkqoXbCNTfU8mttVL7cb_Njcw-GIzl6A5w3e7IJQbnXf-QfNoWlFxdpblZrwthDD5QmNcJ0vrgX3HrC7h_47XV0RxUlSNFUoT268ykzSKKlXxLowvhA_trp5CxXAa3LfZzNSgirBLXYQRzQhszysGYN6tQ-RPsrxdcgNRNO-j7wsYf7F9a-pfVuUKM113tp3yfIuFPFo0G0U6N7MSRG1A5bZTPSig99XGxBjD_C1shXNoBQ-w1ZWMaPHSKOrwCixKGDQiMf0SQLBv7XFBQQ291tG16ugJJprTp_aJE4q--aQ2vQarOUy5iSeVs4a1gXvQo_hcd92478Yw1X5ELLXx2UZB2Hts9uNj75mvre2MP2esNzoirBXy2Zj7hvUnpDpsl64aHAOKJDRw39rppbO0EtO0Xb0OJey1o9PAPS062zr-ssti6DFluCWm2B0ylCMXUMvoF9zT_ewn5e-uH6QZV47P-hNU4sfQZxidrAfmLeREPL6O5OYk5TTnQbdY6HrqX8oZzmt3elsxB0zo_iOpQEkBf4JAPJFZqSa5eyggco2PpQvABcfRBLwXZVEK8CpmEcVQxyj1Z_lgn70GWfG7W78bjZ2KJNhQ5QPduYQSupxzj3vky3WVhAQSY5FIcswRYA4DRtXrMiPM2ZJizSXMeyW5yShGXK78HUbR1ytw4zy8nLN6WQVImFF=w100-h100-s-no?authuser=0" alt="Icon">
+                <img src="../Images/icons8-user-100 (2).png" alt="Icon">
             </div>
             
             <div class="form-title">
@@ -35,18 +35,22 @@
     </div>
 
     <script>
+
         let theme = localStorage.getItem("theme");
         if (theme != null) {
             changeTheme(theme);
         }
         
+    
         function changeTheme(theme) {
             if (theme == "dark") {
                 document.body.className = "dark-theme";
+
             } else {
                 document.body.className = "light-theme";
             }
         }
+
     </script>
 </body>
 </html>
