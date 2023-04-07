@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Tajawal", sans-serif;
+}
+
+.dark-theme {
+  --bg: rgba(17 17 17 / 94);
+  --primary_text: #fff;
+  --secondary_text: #858E96;
+  --boxs: rgba(17 17 17 / 80%);
+}
+.dark-theme .bg {
+  width: 100%;
+  height: 950px;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-image: url("../Images/Untitled-4.jpg");
+}
+
+.light-theme {
+  --bg: #eee;
+  --primary_text: #000;
+  --secondary_text: #333;
+  --home-text: #fff;
+  --home-text-secondary: #EAE6E6;
+  --boxs: #fff;
+}
+.light-theme .bg {
+  width: 100%;
+  height: 950px;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-image: url("../Images/pexels-hert-niks-3224156 (2) copy.jpg");
+}
+
+.form-container {
+  width: 25%;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 150px;
+  background-color: var(--boxs);
+  display: flex;
+  flex-direction: column;
+}
+.form-container .form-content {
+  width: 100%;
+  position: relative;
+  top: 40px;
+}
+.form-container .form-icon {
+  text-align: center;
+}
+.form-container .form-title h3 {
+  text-align: center;
+  font-weight: 700;
+  color: var(--primary_text);
+  margin-top: 20px;
+}
+.form-container .form {
+  position: relative;
+  right: 60px;
+  top: 30px;
+}
+.form-container .label {
+  text-align: right;
+  color: var(--primary_text);
+  font-weight: 300;
+  margin-left: 5px;
+}
+.form-container #username, .form-container #password {
+  width: 70%;
+  height: 35px;
+  background-color: var(--secondary_text);
+  margin-top: 8px;
+  margin-bottom: 30px;
+}
+.form-container #submit-btn {
+  width: 150px;
+  height: 35px;
+  background-color: #F78121;
+  color: #fff;
+  font-weight: 700;
+  font-size: 19px;
+  border: 0;
+  border-radius: 5px;
+  position: relative;
+  right: 95px;
+  top: 50px;
+}
+.form-container a {
+  text-decoration: none;
+  color: var(--primary_text);
+  position: relative;
+  right: 70px;
+  top: 70px;
+}
+
+@media only screen and (max-width: 600px) {
+  .dark-theme .bg {
+    width: 100%;
+    height: 1050px;
+    background-image: url("../Images/signin-dark-mobile.jpg");
+    background-size: contain;
+  }
+  .light-theme .bg {
+    width: 100%;
+    height: 1050px;
+    background-image: url("../Images/Untitled-0.jpg");
+    background-size: contain;
+  }
+  .form-container {
+    width: 90%;
+    position: relative;
+    top: 100px;
+    height: 500px;
+  }
+  .form-container .form-content {
+    position: relative;
+    top: 30px;
+  }
+  .form-container .form-icon img {
+    width: 70px;
+  }
+  .form-container #submit-btn {
+    position: relative;
+    top: 20px;
+    right: 65px;
+  }
+  .form-container a {
+    position: relative;
+    right: 70px;
+    top: 70px;
+  }
+}/*# sourceMappingURL=signIn.css.map */
